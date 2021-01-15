@@ -2,8 +2,8 @@ package com.spring.college.myspringcollege.test;
 
 import org.junit.Test;
 
-import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
@@ -15,7 +15,7 @@ public class tetsx {
 
     @Test
     public void main() {
-        Map<String, AtomicInteger> instanceCountMap = new HashMap<>();
+        Map<String, AtomicInteger> instanceCountMap = new TreeMap<String, AtomicInteger>();
 
         for (int i = 0; i < 12; i++) {
             AtomicInteger instanceCount = instanceCountMap.computeIfAbsent(i + "name",
