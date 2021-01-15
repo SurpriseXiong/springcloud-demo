@@ -7,3 +7,5 @@ target
 *.DS_Store
 *.mvn
 /disconf
+/my-spring-college/mvnw
+/my-spring-college/mvnw.cmd
