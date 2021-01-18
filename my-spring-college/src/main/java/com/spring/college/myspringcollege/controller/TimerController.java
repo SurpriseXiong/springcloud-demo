@@ -3,6 +3,7 @@ package com.spring.college.myspringcollege.controller;
 import com.google.common.util.concurrent.ThreadFactoryBuilder;
 import com.netflix.discovery.TimedSupervisorTask;
 import lombok.SneakyThrows;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -19,6 +20,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * @DATE: 2021/1/15 5:37 下午
  */
 @RestController
+@Slf4j
 public class TimerController {
 
     private static final ScheduledExecutorService scheduler;
